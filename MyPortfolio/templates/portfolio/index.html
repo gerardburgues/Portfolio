@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerard Burgués</title>
+
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" >
+    <link rel = "stylesheet" href = "{% static 'css/bootstrap-social.css'%}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic Coding">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script  type="text/javascript" src="{% static   'js/javascript.js' %}"></script>
+
+  </head>
+  <body >
+
+
+    <div id="all">
+      <div class="Front-page">
+        <div class="container container-Thisis">
+            <h1>Hi, I'm <strong>Gerard Burgués</strong></h1>
+            <h1> Welcome to my portfolio</h1>
+          </div>
+
+          <div id="section1" style="height:800px;">
+
+
+              <img class="center" src="{% static "images/LOGO.png" %}"alt="oups" width="350px" height="350px" >
+              <table class="table mytable rounded">
+
+                <th id="col1"><a href="https://github.com/gerardburgues"><img src="{% static "images/GitHub_Logo.png" %}" alt="This should be GitHub" width="75" height="30"></a></th>
+                <th id="col2"><a href="https://www.linkedin.com/in/gerard-burgués-llavall"><img src="{% static "images/LI-Logo.png" %}" alt="This should be Linkedin" width="85" height="30"></a></th>
+
+              </table>
+
+
+
+
+              <div class="scroll-div scrol" >
+                <a href="#scroll-section3" class="scroll" >
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+
+                  <span class="text">Scroll down</span>
+                </a>
+              </div>
+
+
+
+          </div>
+      </div>
+
+
+
+
+              <div id="scroll-section3" >
+
+              <div id="accordion">
+                  <div class="card card-table">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Projects
+                        <svg class="fletxa"width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.354 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L8 12.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                          <path fill-rule="evenodd" d="M8 6a.5.5 0 0 1 .5.5V13a.5.5 0 0 1-1 0V6.5A.5.5 0 0 1 8 6zM2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                      ​
+
+                      <div class="card-body">
+                        <table class="table">
+                          <tr>
+                            <th scope="col" >Kmeans</th>
+                            <th scope="mycol" >
+
+                              <p>In this project I solve the problem of labeling images.
+                                 With given images I have created a K-means algorithm to
+                                 classify what is the color that prevails from the others
+                                 in an image.</p>
+                            </th>
+                            <th scope="col" id="github" >
+                              <a href="https://github.com/gerardburgues/Kmeans"> <img src="{% static "images/GitHub-Mark-32px.png" %}" alt="ou" width="60px" height="60px"></a> <!-- S'ha de trobar una icona millor // tamany es perfecte -->
+                            </th>
+                          </tr>
+                          <tr>
+                            <th scope="col" >Knn</th>
+                            <th scope="col mycol" style="width:500px;">
+
+                            <p> In this project I keep working with images but in this case
+                              the goal is to define what kind of cloth the program identify
+                              in the picture. To do that I used the surpervised method Knn.</p>
+                          </th>
+
+                            </th>
+                            <th scope="col" id="github">
+                              <a href="https://github.com/gerardburgues/Knn"> <img src="{% static "images/GitHub-Mark-32px.png" %}" alt="ou" width="60px" height="60px"></a> <!-- S'ha de trobar una icona millor // tamany es perfecte -->
+                            </th>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th scope="col" >Navigation</th>
+                            <th scope="mycol" >
+
+                              <p>
+                            In this project the goal is simple.
+                            Using a navigation map and with Start-coordinate and End-coordinate
+                            I found the best route between those two points.
+                            To find it I used metro as a transport between Barcelona stations</p>
+                            </th>
+                            <th scope="col" id="github">
+                              <a href="https://github.com/gerardburgues/Navigation"> <img src="{% static "images/GitHub-Mark-32px.png" %}" alt="ou" width="60px" height="60px"></a> <!-- S'ha de trobar una icona millor // tamany es perfecte -->
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    My skills
+                    <svg class="fletxa"width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M11.354 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L8 12.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                      <path fill-rule="evenodd" d="M8 6a.5.5 0 0 1 .5.5V13a.5.5 0 0 1-1 0V6.5A.5.5 0 0 1 8 6zM2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                        <table class="tableskills">
+
+                          <tr>
+                            <th scope="row" id="dele">Web Development</th>
+                            <th>Django</th>
+                            <th>PHP</th>
+                            <th>HTML</th>
+                            <th>CSS</th>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="dele">Data Base</th>
+                            <th>SQL</th>
+                          </tr>
+                          <tr>
+                            <th scope="row"id="dele">Operative System</th>
+                              <th>BASH</th>
+                              <th>LINUX</th>
+                          </tr>
+                          <tr>
+                            <th scope="row"id="dele">Programming</th>
+
+                            <th>C++</th>
+                            <th>PYTHON</th>
+                          </tr>
+
+
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        About me
+                        <svg class="fletxa"width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.354 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L8 12.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                          <path fill-rule="evenodd" d="M8 6a.5.5 0 0 1 .5.5V13a.5.5 0 0 1-1 0V6.5A.5.5 0 0 1 8 6zM2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                      <div class="card-body" >
+
+
+                      <p>  My name is Gerard Burgués and I'm currently studying in
+                        Universitat Autònoma de Barcelona with the goal of becoming an Artificial Intelligence
+                        Engineer.
+                        I'm just starting with the world of AI but even though it's a complex
+                        world I already did a few university projects.
+                      </p>
+                      <h4>To know more about my experience and person skills check my CV</h4>
+                    <a href="https://drive.google.com/file/d/1s8-wpywnf7hFSyRfojOp0pcRgZdUxqZH/view?usp=sharing" target="_blank" class="badge badge-success">Click here</a>
+                    <a href="https://drive.google.com/file/d/1s8-wpywnf7hFSyRfojOp0pcRgZdUxqZH/view?usp=sharing"><img src="https://img.icons8.com/officel/40/000000/pdf.png"/></a>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            <footer class="foot">
+<hr>
+
+
+              <!-- Footer Elements -->
+              <div class="container" >
+
+
+              <!-- Copyright -->
+              <div class="text-center py-3 ">
+                <!--Facebook-->
+                <ul  style="list-style-type:none;" >
+                  <li>
+                    <a href="https://www.linkedin.com/in/gerard-burgués-llavall"><img src="{% static "images/LinkedIn.png" %}" alt="Ups" ></a>
+
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{% static "images/GitHub-Mark-Light-120px-plus.png" %}" alt="" width="30px" height="30px">
+                    </a>
+                  </li>
+                </ul>
+
+
+
+              </div>
+              <!-- Copyright -->
+
+              </div>
+            </footer>
+
+
+
+
+
+
+
+  </body>
+</html>
