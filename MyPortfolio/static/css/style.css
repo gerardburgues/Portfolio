@@ -1,0 +1,378 @@
+
+
+body{
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic Coding';font-size: 22px;
+
+}
+
+
+
+#section1{
+
+  width:100%;
+  height:300px;
+
+}
+.Front-page{
+
+  background-image: url(AI.gif);
+  align-items: center;
+
+  height:1060px;
+}
+
+
+
+.container-Thisis {
+    padding-top: 100px;
+      margin-bottom:30px;
+      text-align: center;
+  color:black;
+  font-size: 30px;
+  position: relative;
+
+}
+
+.center{
+
+  display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.card_align{
+
+
+background-color: black;
+
+}
+
+h1{
+  font-size: 60px;
+  font-weight: bold ;
+  font-kerning: normal;
+  color:white;
+}
+.mytable{
+  width: 210px;
+  height:60px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  background-color: white;
+  margin-top:50px;
+
+}
+#scroll-section3{
+
+background-image: url(machine-learning2.png);
+  width:100%;
+  height:auto;
+
+}
+#accordion{
+
+  padding-top: 50px;
+
+  margin-right:50px;
+  margin-left:50px;
+  text-align:center;
+
+}
+a{
+color:black;
+
+}
+a:hover{
+  font-weight: bolder;
+  text-decoration: none;
+}
+.fletxa{
+  color:black;
+  float:right;
+
+}
+.fletxa:hover{
+
+  font-weight: normal;
+}
+.mytable #col1{
+
+  padding-right:0px;
+}
+.mytable #col2{
+
+  padding-right:0px;
+}
+.table th {
+  padding-right:100px;
+}
+
+.tableskills{
+
+  width: 100%;
+  text-align: center;
+
+}
+.tableskills th:hover{
+
+  background-color: grey;
+}
+footer{
+
+position:sticky;
+height:150px;
+background-color: #C3C5D3;
+
+}
+
+
+
+.chevron {
+  margin-left: auto;
+  margin-right:auto;
+
+  display:block;
+
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  margin-left: auto;
+  margin-right: auto;
+text-align: center;
+  display: block;
+  margin-top: 75px;
+
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+.scroll{
+  margin-left: 200px;
+  margin-right: 200px;
+  align-items: center;
+}
+
+.scrol{
+  padding-top:100px;
+}
+/*ESTO ES COPIADO*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*##############################MEDIA QUERY MOBILE#*/
+
+@media only screen and (max-width: 1000px) {
+
+
+  .container-Thisis {
+      padding-top: 80px;
+
+  }
+
+  .Front-page {
+    background-image: url(AI.gif);
+    background-size: 100% 800px;
+    height:800px;
+    background-repeat: no-repeat;
+
+
+  }
+  .table th{
+
+
+    padding-right: 0px;
+  }
+  .scrol{
+    padding-top:0px;
+  }
+  #section1{
+
+    width:auto;
+    height:100px;
+
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold ;
+    font-kerning: normal;
+    color:white;
+  }
+  #accordion{
+
+    padding-top: 50px;
+    margin-right:0px;
+    margin-left:0px;
+    text-align:center;
+
+  }
+  #scroll-section3{
+
+  background-image: url(machine-learning2.png);
+  background-size: auto 800px;
+  height:800px;
+  background-repeat: no-repeat;
+
+  }
+
+  th p{
+
+    display:none;
+
+  }
+  #github{
+
+    text-align:left;
+
+  }
+  .mycol{
+
+    width: 0px;
+  }
+.tableskills th{
+
+  font-size: 15px;
+}
+#dele{
+  color:red;
+}
+.tableskills th:hover{
+
+  background-color: grey;
+}
+
+
+  .card-body p{
+    float:left;
+    width:300px;
+font-size: 15px;
+      padding-left:30px;
+      padding-right:0px;
+  }
+  .card-body h4{
+
+    float:left;
+    width:200px;
+font-size: 20px;
+      padding-left:30px;
+      padding-right:0px;
+
+  }
+
+
+  .center{
+
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:auto;
+  height:200px;
+  }
+  footer{
+    display:none;
+  }
+
+}
